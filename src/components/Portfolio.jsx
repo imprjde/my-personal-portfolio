@@ -13,36 +13,42 @@ const Portfolio = () => {
       src: First,
       href: "https://prajwal-react-movie-website-mocha.vercel.app/",
       repo: "https://github.com/imprjde/react-movie-website",
+      title: "Movies App",
     },
     {
       id: 2,
       src: Second,
       href: "https://redux-crud-gules.vercel.app/",
       repo: "https://github.com/imprjde/redux-crud",
+      title: "Redux Toolkit CRUD",
     },
     {
       id: 3,
       src: Third,
       href: "https://ecommerce-site-lime-alpha.vercel.app/",
       repo: "https://github.com/imprjde/ecommerce-site",
+      title: "React E-Commerce Site",
     },
     {
       id: 4,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
+      title: "React Todo App",
     },
     {
       id: 5,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
+      title: "React Pagination",
     },
     {
       id: 6,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
+      title: "Tindog Website",
     },
   ];
   return (
@@ -59,12 +65,17 @@ const Portfolio = () => {
         </div>
 
         <div className="flex flex-row py-12 lg:grid  lg:grid-cols-3 lg:gap-8 overflow-auto">
-          {portfolios.map(({ id, src, href, repo }) => (
+          {portfolios.map(({ id, src, href, repo, title }) => (
             <div
               key={id}
               className="shadow-md duration-300 mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
             >
               <img src={src} alt="" className="rounded-md " />
+
+              <div className="absolute inset-0 flex items-center justify-center pb-12 text-3xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+                <p className="text-white text-center">{title}</p>
+              </div>
+
               <div className="flex items-center justify-center">
                 <a
                   href={href}
