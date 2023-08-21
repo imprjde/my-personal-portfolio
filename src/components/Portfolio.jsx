@@ -1,0 +1,94 @@
+import React from "react";
+import First from "../assets/portfolio/First.jpg";
+import Second from "../assets/portfolio/Second.jpg";
+import Third from "../assets/portfolio/Third.jpg";
+import Fourth from "../assets/portfolio/Fourth.jpg";
+import Fifth from "../assets/portfolio/Fifth.png";
+import Sixth from "../assets/portfolio/Sixth.png";
+
+const Portfolio = () => {
+  const portfolios = [
+    {
+      id: 1,
+      src: First,
+      href: "https://prajwal-react-movie-website-mocha.vercel.app/",
+      repo: "https://github.com/imprjde/react-movie-website",
+    },
+    {
+      id: 2,
+      src: Second,
+      href: "https://redux-crud-gules.vercel.app/",
+      repo: "https://github.com/imprjde/redux-crud",
+    },
+    {
+      id: 3,
+      src: Third,
+      href: "https://ecommerce-site-lime-alpha.vercel.app/",
+      repo: "https://github.com/imprjde/ecommerce-site",
+    },
+    {
+      id: 4,
+      src: Fourth,
+      href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
+      repo: "https://github.com/imprjde/prajwal",
+    },
+    {
+      id: 5,
+      src: Fifth,
+      href: "https://react-pagination-mauve-iota.vercel.app/",
+      repo: "https://github.com/imprjde/react-pagination",
+    },
+    {
+      id: 6,
+      src: Sixth,
+      href: "https://imprjde.github.io/tindog/#cta",
+      repo: "https://github.com/imprjde/tindog",
+    },
+  ];
+  return (
+    <div
+      name="portfolio"
+      className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-fit md:pt-0 pt-[120px]"
+    >
+      <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
+        <div className="pb-8">
+          <p className="text-4xl font-bold inline border-b-4 border-gray-500">
+            Portfolio
+          </p>
+          <p className="py-6">Check out some of my work right here</p>
+        </div>
+
+        <div className="flex flex-row py-12 lg:grid  lg:grid-cols-3 lg:gap-8 overflow-auto">
+          {portfolios.map(({ id, src, href, repo }) => (
+            <div
+              key={id}
+              className="shadow-md duration-300 mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
+            >
+              <img src={src} alt="" className="rounded-md " />
+              <div className="flex items-center justify-center">
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
+                  Demo
+                </a>
+                <a
+                  href={repo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                >
+                  Code
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Portfolio;
