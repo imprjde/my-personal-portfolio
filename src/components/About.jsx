@@ -35,7 +35,7 @@ const About = () => {
             {" "}
             mytyles.com{" "}
           </a>
-          ) to scale thier business online. Rooted in the values of precision
+          ) to scale their business online. Rooted in the values of precision
           and creativity, I believe in leveraging technology to shape the future
           while embracing every opportunity to learn and grow.
         </p>
