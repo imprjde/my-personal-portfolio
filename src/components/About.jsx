@@ -14,7 +14,7 @@ const About = () => {
         </div>
 
         <p className="text-xl mt-12">
-          I'm Prajwal Devadiga, a dedicated software developer with a background
+          I'm Prajwal Devadiga, a dedicated Software Developer with a background
           in IT. Armed with a Bachelor's degree in engineering, my passion for
           technology fuels my drive to create innovative solutions. With a keen
           focus on showcasing my expertise and past projects, my portfolio is a
@@ -25,7 +25,8 @@ const About = () => {
 
         <p className="text-xl">
           My recent collaboration stands as a testament to my capabilities. I
-          built a dynamic web application for <br /> My-Tyles Pvt Ltd (
+          along with my senior Dev Team built a dynamic web application for{" "}
+          <br /> My-Tyles Pvt Ltd (
           <a
             href="https://mytyles.com/"
             target="_blank"

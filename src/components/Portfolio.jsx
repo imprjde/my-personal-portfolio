@@ -68,7 +68,7 @@ const Portfolio = () => {
           {portfolios.map(({ id, src, href, repo, title }) => (
             <div
               key={id}
-              className="shadow-md duration-300 mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
+              className="shadow-md duration-300 cursor-pointer mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
             >
               <img src={src} alt="" className="rounded-md " />
 
