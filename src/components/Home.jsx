@@ -26,7 +26,7 @@ const Home = () => {
               to="portfolio"
               smooth
               duration={500}
-              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+              className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 "
             >
               Portfolio
               <span className="group-hover:rotate-90 duration-300">
@@ -40,7 +40,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto cursor-pointer hover:scale-105 mb-6 mt-[-10px] md:mb-0 md:mt-0 md:pb-0  h-fit duration-300 w-[80%] md:w-full "
+            className="rounded-2xl mx-auto hover:scale-105 mb-6 mt-[-10px] md:mb-0 md:mt-0 md:pb-0  h-fit duration-300 w-[80%] md:w-full "
           />
         </div>
       </div>
@@ -49,5 +49,3 @@ const Home = () => {
 };
 
 export default Home;
-
-//////////////////////////////////////////
