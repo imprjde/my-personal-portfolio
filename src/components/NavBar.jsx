@@ -30,13 +30,22 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center z-20 w-full h-20 px-4 text-white bg-black fixed">
-      <div>
+    <div className="flex justify-between items-center z-20 w-full h-20 px-4 text-white bg-black fixed ">
+      <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, type: "tween" }}
+      >
         <h1 className="text-[40px] md:text-5xl font-signature ml-2 mt-2">
           Prajwal Devadiga
         </h1>
-      </div>
-      <ul className="hidden md:flex">
+      </motion.div>
+      <motion.ul
+        initial={{ opacity: 0, x: 200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, type: "tween" }}
+        className="hidden md:flex"
+      >
         {links.map(({ id, link }) => (
           <li
             key={id}
@@ -53,7 +62,7 @@ const NavBar = () => {
             )}
           </li>
         ))}
-      </ul>
+      </motion.ul>
 
       <div
         onClick={() => setNav(!nav)}
