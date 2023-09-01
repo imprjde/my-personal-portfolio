@@ -50,7 +50,7 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className={` lg:flex flex-col  top-[48%] md:top-[35%] left-0 fixed`}>
+    <div className={` lg:flex flex-col  top-[50%] md:top-[35%] left-0 fixed`}>
       <ul>
         <li
           className={`md:hidden rounded-tr-md ${

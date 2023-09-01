@@ -1,7 +1,7 @@
-
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -46,10 +46,10 @@ const NavBar = () => {
               {link.toUpperCase()}
             </Link>
             {bar === id && (
-              <span
-                // layoutId="Tab_Indicator"
+              <motion.span
+                layoutId="Tab_Indicator"
                 className="bg-gradient-to-r from-cyan-500 to-blue-500 w-12 h-[3px] rounded-sm "
-              ></span>
+              ></motion.span>
             )}
           </li>
         ))}
