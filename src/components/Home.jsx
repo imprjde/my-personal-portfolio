@@ -40,7 +40,7 @@ const Home = () => {
           <img
             src={HeroImage}
             alt="my profile"
-            className="rounded-2xl mx-auto hover:scale-105 mb-6 mt-[-10px] md:mb-0 md:mt-0 md:pb-0  h-fit duration-300 w-[80%] md:w-full "
+            className="rounded-2xl mx-auto cursor-pointer hover:scale-105 mb-6 mt-[-10px] md:mb-0 md:mt-0 md:pb-0  h-fit duration-300 w-[80%] md:w-full "
           />
         </div>
       </div>

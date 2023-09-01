@@ -13,6 +13,7 @@ import Git from "../assets/Git.png";
 import JSON from "../assets/JSON.png";
 import DSA from "../assets/DSA.png";
 import SDE from "../assets/SDE.png";
+import Framer from "../assets/Framer.png";
 
 const Experience = () => {
   const techs = [
@@ -90,9 +91,15 @@ const Experience = () => {
       title: "JSON ",
       style: "shadow-rose-700 pt-8",
     },
-
     {
       id: 13,
+      src: Framer,
+      title: "Framer Motion ",
+      style: "shadow-fuchsia-400 pt-8",
+    },
+
+    {
+      id: 14,
       src: SDE,
       title: "Software Development",
       style: "shadow-teal-700 pt-10",
@@ -106,7 +113,7 @@ const Experience = () => {
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         <div>
-          <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
+          <p className="text-4xl bg- font-bold border-b-4 border-gray-500 p-2 inline">
             Skills
           </p>
           <p className="py-6">These are the technologies I've worked with</p>

@@ -26,7 +26,7 @@ const About = () => {
         <p className="text-xl">
           My recent collaboration stands as a testament to my capabilities. I
           along with my senior Dev Team built a dynamic web application for{" "}
-          My-Tyles Pvt Ltd (
+           My-Tyles Pvt Ltd (
           <a
             href="https://mytyles.com/"
             target="_blank"

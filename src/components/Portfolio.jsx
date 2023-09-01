@@ -5,6 +5,7 @@ import Third from "../assets/portfolio/Third.jpg";
 import Fourth from "../assets/portfolio/Fourth.jpg";
 import Fifth from "../assets/portfolio/Fifth.png";
 import Sixth from "../assets/portfolio/Sixth.png";
+import Seventh from "../assets/portfolio/Seventh.png";
 
 const Portfolio = () => {
   const portfolios = [
@@ -24,27 +25,34 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      src: Seventh,
+      href: "https://farmer-motion.netlify.app/",
+      repo: "https://github.com/imprjde/framer-motion-project",
+      title: "Challenge Manager (Framer Motion + Redux Tool Kit )",
+    },
+    {
+      id: 4,
       src: Third,
       href: "https://ecommerce-site-lime-alpha.vercel.app/",
       repo: "https://github.com/imprjde/ecommerce-site",
       title: "React E-Commerce Site",
     },
     {
-      id: 4,
+      id: 5,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
       title: "React Todo App",
     },
     {
-      id: 5,
+      id: 6,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
     },
     {
-      id: 6,
+      id: 7,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
@@ -68,11 +76,12 @@ const Portfolio = () => {
           {portfolios.map(({ id, src, href, repo, title }) => (
             <div
               key={id}
-              className="shadow-md duration-300 cursor-pointer mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
+              className="shadow-md duration-300
+                mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
             >
               <img src={src} alt="" className="rounded-md " />
 
-              <div className="absolute inset-0 flex items-center justify-center pb-12 text-3xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex items-center cursor-pointer justify-center pb-12 text-xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-center">{title}</p>
               </div>
 
@@ -81,7 +90,7 @@ const Portfolio = () => {
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className=" cursor-pointer w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105"
                 >
                   Demo
                 </a>
@@ -89,7 +98,7 @@ const Portfolio = () => {
                   href={repo}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105"
+                  className=" w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105 cursor-pointer "
                 >
                   Code
                 </a>
