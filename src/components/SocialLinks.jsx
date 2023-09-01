@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
+import { motion } from "framer-motion";
 
 const SocialLinks = () => {
   const [show, setShow] = useState("hidden");
@@ -52,7 +53,10 @@ const SocialLinks = () => {
   return (
     <div className={` lg:flex flex-col  top-[50%] md:top-[35%] left-0 fixed`}>
       <ul>
-        <li
+        <motion.li
+          initial={{ x: -100 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 2 }}
           className={`md:hidden rounded-tr-md ${
             show ? " rounded-br-md" : "rounded-br-none"
           }  rounded-l-none  flex justify-between items-center w-[60px] h-14 px-4  hover:rounded-md duration-300 bg-gray-500`}
@@ -65,7 +69,7 @@ const SocialLinks = () => {
           >
             {!show ? <VscChromeClose size={30} /> : <VscMenu size={30} />}
           </button>
-        </li>
+        </motion.li>
 
         {links.map(({ id, child, href, style, download }) => (
           <li
