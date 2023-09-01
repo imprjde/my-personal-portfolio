@@ -50,7 +50,6 @@ const Home = () => {
             type: "spring",
             duration: 0.5,
             stiffness: "50",
-            staggerChildren: 1,
           }}
         >
           <img
