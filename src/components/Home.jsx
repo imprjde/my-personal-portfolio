@@ -2,7 +2,6 @@ import React from "react";
 import HeroImage from "../assets/heroImage.png";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
-import { motion } from "framer-motion";
 
 const Home = () => {
   return (
@@ -12,14 +11,9 @@ const Home = () => {
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
-          <motion.h2
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            className="text-4xl sm:text-7xl  w-fit font-bold text-white"
-          >
+          <h2 className="text-4xl sm:text-7xl  w-fit font-bold text-white">
             I'm a Software Developer
-          </motion.h2>
+          </h2>
           <p className="text-gray-500 py-4 max-w-md">
             I am an aspiring Junior Software Developer hailing from India. My
             professional experience encompasses a proficiency in web
