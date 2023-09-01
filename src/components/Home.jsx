@@ -18,7 +18,7 @@ const Home = () => {
             transition={{ duration: 1 }}
             className="text-4xl sm:text-7xl  w-fit font-bold text-white"
           >
-            I'm a Software Developerrr
+            I'm a Software Developer
           </motion.h2>
           <p className="text-gray-500 py-4 max-w-md">
             I am an aspiring Junior Software Developer hailing from India. My
@@ -43,24 +43,13 @@ const Home = () => {
           </div>
         </div>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{
-            type: "spring",
-            duration: 2,
-            stiffness: "50",
-          }}
-        >
+        <div>
           <img
             src={HeroImage}
             alt="my profile"
-            initial={{ opacity: 0, y: 200 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ type: "spring", duration: 1, stiffness: "100" }}
             className="rounded-2xl mx-auto  hover:scale-105 mb-6 mt-[-10px] md:mb-0 md:mt-0 md:pb-0  h-fit duration-300 w-[80%] md:w-full "
           />
-        </motion.div>
+        </div>
       </div>
     </div>
   );
