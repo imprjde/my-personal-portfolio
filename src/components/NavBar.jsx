@@ -1,9 +1,12 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
+  const [bar, setBar] = useState(1);
+  console.log(bar);
   const links = [
     {
       id: 1,
@@ -27,24 +30,44 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center z-10 w-full h-20 px-4 text-white bg-black fixed">
-      <div>
+    <div className="flex justify-between items-center z-20 w-full h-20 px-4 text-white bg-black fixed">
+      <motion.div
+        initial={{ opacity: 0, x: -200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ type: "spring", duration: 1, stiffness: "100" }}
+      >
         <h1 className="text-[40px] md:text-5xl font-signature ml-2 mt-2">
           Prajwal Devadiga
         </h1>
-      </div>
-      <ul className="hidden md:flex">
+      </motion.div>
+      <motion.ul
+        initial={{ opacity: 0, x: 200 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{
+          type: "spring",
+          duration: 1,
+          stiffness: "50",
+          staggerChildren: 1,
+        }}
+        className="hidden md:flex"
+      >
         {links.map(({ id, link }) => (
           <li
             key={id}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-125 duration-200"
+            className="px-4 cursor-pointer capitalize flex flex-col justify-center items-center font-medium text-gray-500"
           >
-            <Link to={link} smooth duration={500}>
+            <Link to={link} onClick={() => setBar(id)} smooth duration={500}>
               {link.toUpperCase()}
             </Link>
+            {bar === id && (
+              <motion.span
+                layoutId="Tab_Indicator"
+                className="bg-gradient-to-r from-cyan-500 to-blue-500 w-12 h-[3px] rounded-sm "
+              ></motion.span>
+            )}
           </li>
         ))}
-      </ul>
+      </motion.ul>
 
       <div
         onClick={() => setNav(!nav)}

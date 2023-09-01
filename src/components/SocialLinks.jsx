@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
+import { motion } from "framer-motion";
 
 const SocialLinks = () => {
   const [show, setShow] = useState("hidden");
@@ -50,7 +51,12 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className={` lg:flex flex-col  top-[48%] md:top-[35%] left-0 fixed`}>
+    <motion.div
+      initial={{ opacity: 0, y: 200 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "spring", duration: 1, stiffness: "100" }}
+      className={` lg:flex flex-col  top-[48%] md:top-[35%] left-0 fixed`}
+    >
       <ul>
         <li
           className={`md:hidden rounded-tr-md ${
@@ -86,7 +92,7 @@ const SocialLinks = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

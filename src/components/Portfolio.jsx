@@ -6,6 +6,7 @@ import Fourth from "../assets/portfolio/Fourth.jpg";
 import Fifth from "../assets/portfolio/Fifth.png";
 import Sixth from "../assets/portfolio/Sixth.png";
 import Seventh from "../assets/portfolio/Seventh.png";
+import { Element } from "react-scroll";
 
 const Portfolio = () => {
   const portfolios = [
@@ -60,7 +61,7 @@ const Portfolio = () => {
     },
   ];
   return (
-    <div
+    <Element
       name="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-fit md:pt-0 pt-[120px]"
     >
@@ -107,7 +108,7 @@ const Portfolio = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
