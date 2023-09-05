@@ -6,6 +6,7 @@ import Fourth from "../assets/portfolio/Fourth.jpg";
 import Fifth from "../assets/portfolio/Fifth.png";
 import Sixth from "../assets/portfolio/Sixth.png";
 import Seventh from "../assets/portfolio/Seventh.png";
+import Eight from "../assets/portfolio/Eight.png";
 import { Element } from "react-scroll";
 
 const Portfolio = () => {
@@ -40,20 +41,27 @@ const Portfolio = () => {
     },
     {
       id: 5,
+      src: Eight,
+      href: "https://react-posts-comment.netlify.app/",
+      repo: "https://github.com/imprjde/react-post-comments",
+      title: "A Project Using JSON Placeholder Dummy API",
+    },
+    {
+      id: 6,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
       title: "React Todo App",
     },
     {
-      id: 6,
+      id: 7,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
     },
     {
-      id: 7,
+      id: 8,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
