@@ -7,7 +7,10 @@ import Fifth from "../assets/portfolio/Fifth.png";
 import Sixth from "../assets/portfolio/Sixth.png";
 import Seventh from "../assets/portfolio/Seventh.png";
 import Eight from "../assets/portfolio/Eight.png";
+import Ninth from "../assets/portfolio/Ninth.png";
 import { Element } from "react-scroll";
+
+// NOTE: "The dimension of the image should be height: 651 px width: 1157 px"
 
 const Portfolio = () => {
   const portfolios = [
@@ -48,20 +51,27 @@ const Portfolio = () => {
     },
     {
       id: 6,
+      src: Ninth,
+      href: "https://react-order-page.netlify.app/",
+      repo: "https://github.com/imprjde/order-page",
+      title: "React Order Page Project",
+    },
+    {
+      id: 7,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
       title: "React Todo App",
     },
     {
-      id: 7,
+      id: 8,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
     },
     {
-      id: 8,
+      id: 9,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
