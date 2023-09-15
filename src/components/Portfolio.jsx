@@ -8,6 +8,7 @@ import Sixth from "../assets/portfolio/Sixth.png";
 import Seventh from "../assets/portfolio/Seventh.png";
 import Eight from "../assets/portfolio/Eight.png";
 import Ninth from "../assets/portfolio/Ninth.png";
+import Tenth from "../assets/portfolio/Tenth.png";
 import { Element } from "react-scroll";
 
 // NOTE: "The dimension of the image should be height: 651 px width: 1157 px"
@@ -65,13 +66,20 @@ const Portfolio = () => {
     },
     {
       id: 8,
+      src: Tenth,
+      href: "https://react-speech-to-text-converter.netlify.app/",
+      repo: "https://github.com/imprjde/react-speech-to-text-converter",
+      title: "React Speech To Text Converter",
+    },
+    {
+      id: 9,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
     },
     {
-      id: 9,
+      id: 10,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
