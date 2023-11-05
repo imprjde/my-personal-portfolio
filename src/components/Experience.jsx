@@ -14,6 +14,9 @@ import JSON from "../assets/JSON.png";
 import DSA from "../assets/DSA.png";
 import SDE from "../assets/SDE.png";
 import Framer from "../assets/Framer.png";
+import Node from "../assets/node.png";
+import Express from "../assets/express.png";
+import Mongo from "../assets/mongo.png";
 
 const Experience = () => {
   const techs = [
@@ -68,38 +71,58 @@ const Experience = () => {
     },
     {
       id: 9,
+      src: Node,
+      title: "Node JS",
+      style: "shadow-green-900",
+    },
+    {
+      id: 10,
+      src: Express,
+      size: "50px",
+      title: "Express JS",
+      style: "shadow-gray-500",
+    },
+    {
+      id: 11,
+      src: Mongo,
+      size: "50px",
+      title: "Mongo DB",
+      style: "shadow-green-400",
+    },
+    {
+      id: 12,
       src: github,
       title: "GitHub",
       style: "shadow-gray-500",
     },
     {
-      id: 10,
+      id: 13,
       src: Git,
       title: "Git ",
       style: "shadow-orange-700",
     },
 
     {
-      id: 11,
+      id: 14,
       src: Api,
       title: "API ",
       style: "shadow-pink-700",
     },
     {
-      id: 12,
+      id: 15,
       src: JSON,
       title: "JSON ",
       style: "shadow-rose-700 pt-8",
     },
     {
-      id: 13,
+      id: 16,
       src: Framer,
       title: "Framer Motion ",
       style: "shadow-fuchsia-400 pt-8",
     },
 
     {
-      id: 14,
+      id: 17,
       src: SDE,
       title: "Software Development",
       style: "shadow-teal-700 pt-10",
@@ -120,7 +143,7 @@ const Experience = () => {
         </div>
 
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {techs.map(({ id, src, title, style }) => (
+          {techs.map(({ id, src, title, style, size }) => (
             <div
               key={id}
               className={`shadow-md hover:scale-105 duration-500 cursor-pointer py-2 rounded-lg ${style}`}
