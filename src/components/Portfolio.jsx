@@ -9,6 +9,7 @@ import Seventh from "../assets/portfolio/Seventh.png";
 import Eight from "../assets/portfolio/Eight.png";
 import Ninth from "../assets/portfolio/Ninth.png";
 import Tenth from "../assets/portfolio/Tenth.png";
+import MERNTODO from "../assets/portfolio/Mern-Todo.png";
 import { Element } from "react-scroll";
 
 // NOTE: "The dimension of the image should be height: 651 px width: 1157 px"
@@ -24,62 +25,69 @@ const Portfolio = () => {
     },
     {
       id: 2,
+      src: MERNTODO,
+      href: "https://mern-fs-todo.vercel.app/login",
+      repo: "https://github.com/imprjde/fs-todo-frontend",
+      title: "MERN Todo App",
+    },
+    {
+      id: 3,
       src: Second,
       href: "https://redux-crud-gules.vercel.app/",
       repo: "https://github.com/imprjde/redux-crud",
       title: "Redux Toolkit CRUD",
     },
     {
-      id: 3,
+      id: 4,
       src: Seventh,
       href: "https://farmer-motion.netlify.app/",
       repo: "https://github.com/imprjde/framer-motion-project",
       title: "Challenge Manager (Framer Motion + Redux Tool Kit )",
     },
     {
-      id: 4,
+      id: 5,
       src: Third,
       href: "https://ecommerce-site-lime-alpha.vercel.app/",
       repo: "https://github.com/imprjde/ecommerce-site",
       title: "React E-Commerce Site",
     },
     {
-      id: 5,
+      id: 6,
       src: Eight,
       href: "https://react-posts-comment.netlify.app/",
       repo: "https://github.com/imprjde/react-post-comments",
       title: "A Project Using JSON Placeholder Dummy API",
     },
     {
-      id: 6,
+      id: 7,
       src: Ninth,
       href: "https://react-order-page.netlify.app/",
       repo: "https://github.com/imprjde/order-page",
       title: "React Order Page Project",
     },
     {
-      id: 7,
+      id: 8,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
       title: "React Todo App",
     },
     {
-      id: 8,
+      id: 9,
       src: Tenth,
       href: "https://react-speech-to-text-converter.netlify.app/",
       repo: "https://github.com/imprjde/react-speech-to-text-converter",
       title: "React Speech To Text Converter",
     },
     {
-      id: 9,
+      id: 10,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
     },
     {
-      id: 10,
+      id: 11,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
