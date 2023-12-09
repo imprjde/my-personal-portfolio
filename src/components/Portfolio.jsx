@@ -1,7 +1,7 @@
 import React from "react";
 import First from "../assets/portfolio/First.jpg";
 import Second from "../assets/portfolio/Second.jpg";
-import Third from "../assets/portfolio/Third.jpg";
+import Third from "../assets/portfolio/Third.png";
 import Fourth from "../assets/portfolio/Fourth.jpg";
 import Fifth from "../assets/portfolio/Fifth.png";
 import Sixth from "../assets/portfolio/Sixth.png";
@@ -47,9 +47,10 @@ const Portfolio = () => {
     {
       id: 5,
       src: Third,
-      href: "https://ecommerce-site-lime-alpha.vercel.app/",
-      repo: "https://github.com/imprjde/ecommerce-site",
+      href: "https://react-ecommerce-ap.vercel.app/",
+      repo: "https://github.com/imprjde/react-ecommerce",
       title: "React E-Commerce Site",
+      extratStyle: "w-full h-36",
     },
     {
       id: 6,
@@ -108,19 +109,23 @@ const Portfolio = () => {
         </div>
 
         <div className="flex flex-row py-12 lg:grid  lg:grid-cols-3 lg:gap-8 overflow-auto">
-          {portfolios.map(({ id, src, href, repo, title }) => (
+          {portfolios.map(({ id, src, href, repo, title, extratStyle }) => (
             <div
               key={id}
               className="shadow-md duration-300
                 mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
             >
-              <img src={src} alt="" className="rounded-md " />
+              <img
+                src={src}
+                alt=""
+                className={`rounded-md  ${extratStyle && extratStyle} `}
+              />
 
               <div className="absolute inset-0 flex items-center cursor-pointer justify-center pb-12 text-xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
                 <p className="text-white text-center">{title}</p>
               </div>
 
-              <div className="flex items-center justify-center">
+              <div className="flex items-center  justify-center">
                 <a
                   href={href}
                   target="_blank"
