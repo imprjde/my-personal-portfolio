@@ -10,6 +10,7 @@ import Eight from "../assets/portfolio/Eight.png";
 import Ninth from "../assets/portfolio/Ninth.png";
 import Tenth from "../assets/portfolio/Tenth.png";
 import MERNTODO from "../assets/portfolio/Mern-Todo.png";
+import CALCULATOR from "../assets/portfolio/react-calculator.png";
 import { Element } from "react-scroll";
 
 // NOTE: "The dimension of the image should be height: 651 px width: 1157 px"
@@ -61,34 +62,42 @@ const Portfolio = () => {
     },
     {
       id: 7,
+      src: CALCULATOR,
+      href: "https://react-calculator-prj.vercel.app/",
+      repo: "https://github.com/imprjde/react-calculator",
+      title: "Simple Calculator",
+      style: "140px ",
+    },
+    {
+      id: 8,
       src: Ninth,
       href: "https://react-order-page.netlify.app/",
       repo: "https://github.com/imprjde/order-page",
       title: "React Order Page Project",
     },
     {
-      id: 8,
+      id: 9,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
       title: "React Todo App",
     },
     {
-      id: 9,
+      id: 10,
       src: Tenth,
       href: "https://react-speech-to-text-converter.netlify.app/",
       repo: "https://github.com/imprjde/react-speech-to-text-converter",
       title: "React Speech To Text Converter",
     },
     {
-      id: 10,
+      id: 11,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
     },
     {
-      id: 11,
+      id: 12,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
@@ -109,42 +118,45 @@ const Portfolio = () => {
         </div>
 
         <div className="flex flex-row py-12 lg:grid  lg:grid-cols-3 lg:gap-8 overflow-auto">
-          {portfolios.map(({ id, src, href, repo, title, extratStyle }) => (
-            <div
-              key={id}
-              className="shadow-md duration-300
+          {portfolios.map(
+            ({ id, src, href, repo, title, extratStyle, style }) => (
+              <div
+                key={id}
+                className="shadow-md duration-300
                 mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
-            >
-              <img
-                src={src}
-                alt=""
-                className={`rounded-md  ${extratStyle && extratStyle} `}
-              />
+              >
+                <img
+                  src={src}
+                  alt=""
+                  style={style && { height: style }}
+                  className={`rounded-md  ${extratStyle && extratStyle} `}
+                />
 
-              <div className="absolute inset-0 flex items-center cursor-pointer justify-center pb-12 text-xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
-                <p className="text-white text-center">{title}</p>
-              </div>
+                <div className="absolute inset-0 flex items-center cursor-pointer justify-center pb-12 text-xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-center">{title}</p>
+                </div>
 
-              <div className="flex items-center  justify-center">
-                <a
-                  href={href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className=" cursor-pointer w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105"
-                >
-                  Demo
-                </a>
-                <a
-                  href={repo}
-                  target="_blank"
-                  rel="noreferrer"
-                  className=" w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105 cursor-pointer "
-                >
-                  Code
-                </a>
+                <div className="flex items-center  justify-center">
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" cursor-pointer w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105"
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105 cursor-pointer "
+                  >
+                    Code
+                  </a>
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </div>
     </Element>
