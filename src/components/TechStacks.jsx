@@ -29,13 +29,13 @@ const TechStacks = ({ setModalOpen, modalData, setModalData }) => {
         <div className="relative p-4 w-full  max-h-full">
           <div
             ref={overlayRef}
-            className="relative bg-gradient-to-t from-sky-300 to-sky-500 m-auto md:w-[50%] opacity-100 rounded-lg dark:bg-gray-700"
+            className="relative bg-gradient-to-t from-sky-300 to-sky-500 m-auto md:w-[50%] opacity-100 rounded-lg "
             style={{
               boxShadow: "0 1px 80px rgba(135, 206, 250, 1)",
             }}
           >
-            <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
-              <h3 className="text-lg font-semibold text-gray-950 dark:text-white">
+            <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t ">
+              <h3 className="text-lg font-semibold text-gray-950 ">
                 {modalData?.title}
               </h3>
               <button
@@ -43,7 +43,7 @@ const TechStacks = ({ setModalOpen, modalData, setModalData }) => {
                   setModalOpen(false);
                   setModalData(null);
                 }}
-                className="text-white  bg-transparent  hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+                className="text-white  bg-transparent  hover:text-gray-900 rounded-lg text-sm h-8 w-8 ms-auto inline-flex justify-center items-center  "
               >
                 <svg
                   className="w-3 h-3"
@@ -64,7 +64,7 @@ const TechStacks = ({ setModalOpen, modalData, setModalData }) => {
               </button>
             </div>
             <div className="p-4 md:p-5">
-              <p className="text-base font-semibold  tracking-w text-black dark:text-gray-400">
+              <p className="text-base font-semibold  tracking-w text-black ">
                 Here are the tech stacks used in this Project.
               </p>
               <ul className="my-4 space-y-3 overflow-y-auto">
