@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import First from "../assets/portfolio/First.jpg";
 import Second from "../assets/portfolio/Second.jpg";
 import Third from "../assets/portfolio/Third.png";
@@ -12,10 +12,13 @@ import Tenth from "../assets/portfolio/Tenth.png";
 import MERNTODO from "../assets/portfolio/Mern-Todo.png";
 import CALCULATOR from "../assets/portfolio/react-calculator.png";
 import { Element } from "react-scroll";
+import TechStacks from "./TechStacks";
 
 // NOTE: "The dimension of the image should be height: 651 px width: 1157 px"
-
 const Portfolio = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalData, setModalData] = useState(null);
+
   const portfolios = [
     {
       id: 1,
@@ -23,6 +26,16 @@ const Portfolio = () => {
       href: "https://prajwal-react-movie-website-mocha.vercel.app/",
       repo: "https://github.com/imprjde/react-movie-website",
       title: "Movies App",
+      stacks: [
+        "React JS",
+        "Redux Toolkit",
+        "React Router Dom",
+        "React Player",
+        "React Circular Progressbar",
+        "React Icons",
+        "Axios",
+        "DayJS",
+      ],
     },
     {
       id: 2,
@@ -30,6 +43,19 @@ const Portfolio = () => {
       href: "https://mern-fs-todo.vercel.app/login",
       repo: "https://github.com/imprjde/fs-todo-frontend",
       title: "MERN Todo App",
+      stacks: [
+        "Node JS",
+        "Express JS",
+        "React JS",
+        "Mongoose JS",
+        "Mongo DB",
+        "React Router Dom",
+        "React Toastify",
+        "TailwindCSS",
+        "Axios",
+        "Headlessui",
+        "Hero Icons",
+      ],
     },
     {
       id: 3,
@@ -37,6 +63,7 @@ const Portfolio = () => {
       href: "https://redux-crud-gules.vercel.app/",
       repo: "https://github.com/imprjde/redux-crud",
       title: "Redux Toolkit CRUD",
+      stacks: ["React JS", "Redux Toolkit", "React Router Dom", "Bootstrap"],
     },
     {
       id: 4,
@@ -44,6 +71,13 @@ const Portfolio = () => {
       href: "https://farmer-motion.netlify.app/",
       repo: "https://github.com/imprjde/framer-motion-project",
       title: "Challenge Manager (Framer Motion + Redux Tool Kit )",
+      stacks: [
+        "React JS",
+        "React Redux",
+        "React Router Dom",
+        "React Icons",
+        "TailwindCSS",
+      ],
     },
     {
       id: 5,
@@ -52,6 +86,15 @@ const Portfolio = () => {
       repo: "https://github.com/imprjde/react-ecommerce",
       title: "React E-Commerce Site",
       extratStyle: "w-full h-36",
+      stacks: [
+        "React JS",
+        "React Router Dom",
+        "Axios",
+        "React Rating",
+        "React Icons",
+        "Lodash Debounce",
+        "TailwindCSS",
+      ],
     },
     {
       id: 6,
@@ -59,6 +102,13 @@ const Portfolio = () => {
       href: "https://react-posts-comment.netlify.app/",
       repo: "https://github.com/imprjde/react-post-comments",
       title: "A Project Using JSON Placeholder Dummy API",
+      stacks: [
+        "React JS",
+        "React Router Dom",
+        "React Loading Skeleton",
+        "React Icons",
+        "TailwindCSS",
+      ],
     },
     {
       id: 7,
@@ -67,6 +117,7 @@ const Portfolio = () => {
       repo: "https://github.com/imprjde/react-calculator",
       title: "Simple Calculator",
       style: "140px ",
+      stacks: ["React JS", "TailwindCSS"],
     },
     {
       id: 8,
@@ -74,6 +125,7 @@ const Portfolio = () => {
       href: "https://react-order-page.netlify.app/",
       repo: "https://github.com/imprjde/order-page",
       title: "React Order Page Project",
+      stacks: ["React JS", "TailwindCSS"],
     },
     {
       id: 9,
@@ -81,6 +133,7 @@ const Portfolio = () => {
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
       title: "React Todo App",
+      stacks: ["React JS", "Axios", "TailwindCSS"],
     },
     {
       id: 10,
@@ -88,6 +141,13 @@ const Portfolio = () => {
       href: "https://react-speech-to-text-converter.netlify.app/",
       repo: "https://github.com/imprjde/react-speech-to-text-converter",
       title: "React Speech To Text Converter",
+      stacks: [
+        "React JS",
+        "React Speech Recognition",
+        "React Use Clipboard",
+        "React Icons",
+        "TailwindCSS",
+      ],
     },
     {
       id: 11,
@@ -95,6 +155,7 @@ const Portfolio = () => {
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
       title: "React Pagination",
+      stacks: ["React JS"],
     },
     {
       id: 12,
@@ -102,13 +163,27 @@ const Portfolio = () => {
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
       title: "Tindog Website",
+      stacks: ["HTML", "CSS"],
     },
   ];
+
+  const handleShowTechStacks = (id) => {
+    setModalOpen(true);
+    setModalData(portfolios[id - 1]);
+  };
+
   return (
     <Element
       name="portfolio"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-fit md:pt-0 pt-[120px]"
     >
+      {modalOpen && (
+        <TechStacks
+          setModalOpen={setModalOpen}
+          modalData={modalData}
+          setModalData={setModalData}
+        />
+      )}
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
@@ -141,7 +216,7 @@ const Portfolio = () => {
                     href={href}
                     target="_blank"
                     rel="noreferrer"
-                    className=" cursor-pointer w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105"
+                    className=" cursor-pointer w-1/2 font-medium px-6 py-3 m-4 z-10 "
                   >
                     Demo
                   </a>
@@ -149,10 +224,19 @@ const Portfolio = () => {
                     href={repo}
                     target="_blank"
                     rel="noreferrer"
-                    className=" w-1/2 px-6 py-3 m-4 z-10 duration-200 hover:scale-105 cursor-pointer "
+                    className=" cursor-pointer w-1/2 font-medium px-6 py-3 m-4 z-10   "
                   >
                     Code
                   </a>
+                </div>
+
+                <div className="flex items-center mb-1  justify-center">
+                  <span
+                    onClick={() => handleShowTechStacks(id)}
+                    className=" cursor-pointer font-semibold text-sm  -mt-2 text-sky-300 mb-4 z-10 "
+                  >
+                    View Tech Stacks
+                  </span>
                 </div>
               </div>
             )

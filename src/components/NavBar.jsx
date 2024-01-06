@@ -6,7 +6,6 @@ import { motion } from "framer-motion";
 const NavBar = () => {
   const [nav, setNav] = useState(false);
   const [bar, setBar] = useState(1);
-  console.log(bar);
   const links = [
     {
       id: 1,
