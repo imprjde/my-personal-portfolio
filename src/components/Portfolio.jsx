@@ -11,6 +11,7 @@ import Ninth from "../assets/portfolio/Ninth.png";
 import Tenth from "../assets/portfolio/Tenth.png";
 import MERNTODO from "../assets/portfolio/Mern-Todo.png";
 import CALCULATOR from "../assets/portfolio/react-calculator.png";
+import NOTEKEEPER from "../assets/portfolio/fs-notekeeper.png";
 import { Element } from "react-scroll";
 import TechStacks from "./TechStacks";
 
@@ -59,6 +60,27 @@ const Portfolio = () => {
     },
     {
       id: 3,
+      src: NOTEKEEPER,
+      href: "https://fs-notekeeper-frontend.vercel.app/",
+      repo: "https://github.com/imprjde/fs-notekeeper-frontend",
+      title: "Fullstack Notekeeper App",
+      extratStyle: "w-full h-36",
+      stacks: [
+        "Node JS",
+        "Express JS",
+        "React JS",
+        "Mongoose JS",
+        "Mongo DB",
+        "React Router Dom",
+        "React Toastify",
+        "TailwindCSS",
+        "Axios",
+        "Framer motion",
+        "React Icons",
+      ],
+    },
+    {
+      id: 4,
       src: Second,
       href: "https://redux-crud-gules.vercel.app/",
       repo: "https://github.com/imprjde/redux-crud",
@@ -66,7 +88,7 @@ const Portfolio = () => {
       stacks: ["React JS", "Redux Toolkit", "React Router Dom", "Bootstrap"],
     },
     {
-      id: 4,
+      id: 5,
       src: Seventh,
       href: "https://farmer-motion.netlify.app/",
       repo: "https://github.com/imprjde/framer-motion-project",
@@ -80,7 +102,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 5,
+      id: 6,
       src: Third,
       href: "https://react-ecommerce-ap.vercel.app/",
       repo: "https://github.com/imprjde/react-ecommerce",
@@ -97,7 +119,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 6,
+      id: 7,
       src: Eight,
       href: "https://react-posts-comment.netlify.app/",
       repo: "https://github.com/imprjde/react-post-comments",
@@ -111,7 +133,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 7,
+      id: 8,
       src: CALCULATOR,
       href: "https://react-calculator-prj.vercel.app/",
       repo: "https://github.com/imprjde/react-calculator",
@@ -120,7 +142,7 @@ const Portfolio = () => {
       stacks: ["React JS", "TailwindCSS"],
     },
     {
-      id: 8,
+      id: 9,
       src: Ninth,
       href: "https://react-order-page.netlify.app/",
       repo: "https://github.com/imprjde/order-page",
@@ -128,7 +150,7 @@ const Portfolio = () => {
       stacks: ["React JS", "TailwindCSS"],
     },
     {
-      id: 9,
+      id: 10,
       src: Fourth,
       href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
       repo: "https://github.com/imprjde/prajwal",
@@ -136,7 +158,7 @@ const Portfolio = () => {
       stacks: ["React JS", "Axios", "TailwindCSS"],
     },
     {
-      id: 10,
+      id: 11,
       src: Tenth,
       href: "https://react-speech-to-text-converter.netlify.app/",
       repo: "https://github.com/imprjde/react-speech-to-text-converter",
@@ -150,7 +172,7 @@ const Portfolio = () => {
       ],
     },
     {
-      id: 11,
+      id: 12,
       src: Fifth,
       href: "https://react-pagination-mauve-iota.vercel.app/",
       repo: "https://github.com/imprjde/react-pagination",
@@ -158,7 +180,7 @@ const Portfolio = () => {
       stacks: ["React JS"],
     },
     {
-      id: 12,
+      id: 13,
       src: Sixth,
       href: "https://imprjde.github.io/tindog/#cta",
       repo: "https://github.com/imprjde/tindog",
