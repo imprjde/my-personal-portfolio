@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaTwitter } from "react-icons/fa";
+
 import { VscChromeClose, VscMenu } from "react-icons/vsc";
 import { motion } from "framer-motion";
 
@@ -45,8 +47,17 @@ const SocialLinks = () => {
         </>
       ),
       href: "/PrajwalResume.pdf",
-      style: "rounded-br-md",
       download: true,
+    },
+    {
+      id: 4,
+      child: (
+        <>
+          Twitter <FaTwitter size={30} />
+        </>
+      ),
+      href: "https://twitter.com/prajwal_devv",
+      style: "rounded-br-md",
     },
   ];
 
