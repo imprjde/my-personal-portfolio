@@ -29,7 +29,12 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="flex justify-between items-center z-20 w-full h-20 px-4 text-white bg-black fixed ">
+    <motion.div
+      initial={{ y: -100, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1, ease: "easeIn", delay: 6 }}
+      className="flex justify-between items-center z-20 w-full h-20 px-4 text-white bg-black fixed "
+    >
       <motion.div
         initial={{ opacity: 0, x: -200 }}
         animate={{ opacity: 1, x: 0 }}
@@ -88,7 +93,7 @@ const NavBar = () => {
           ))}
         </ul>
       )}
-    </div>
+    </motion.div>
   );
 };
 

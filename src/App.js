@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Experience from "./components/Experience";
@@ -7,6 +8,10 @@ import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(-10, -10);
+  }, []);
+
   return (
     <div>
       <NavBar />

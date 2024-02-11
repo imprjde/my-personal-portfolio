@@ -62,12 +62,14 @@ const SocialLinks = () => {
   ];
 
   return (
-    <div className={` lg:flex flex-col  top-[50%] md:top-[35%] left-0 fixed`}>
+    <motion.div
+      initial={{ x: -100 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 2, delay: 8 }}
+      className={` lg:flex flex-col  top-[50%] md:top-[35%] left-0 fixed`}
+    >
       <ul>
         <motion.li
-          initial={{ x: -100 }}
-          animate={{ x: 0 }}
-          transition={{ duration: 2 }}
           className={`md:hidden rounded-tr-md ${
             show ? " rounded-br-md" : "rounded-br-none"
           }  rounded-l-none  flex justify-between items-center w-[60px] h-14 px-4  hover:rounded-md duration-300 bg-gray-500`}
@@ -101,7 +103,7 @@ const SocialLinks = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 
