@@ -20,6 +20,7 @@ import Mongo from "../assets/mongo.png";
 import Mongoose from "../assets/Mongoosejs.png";
 
 const Experience = () => {
+  
   const techs = [
     {
       id: 1,

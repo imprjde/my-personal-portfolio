@@ -17,7 +17,7 @@ import TechStacks from "./TechStacks";
 
 // NOTE: "The dimension of the image should be height: 651 px width: 1157 px"
 
-const portfolios = [
+const projectArray = [
   {
     id: 1,
     src: First,
@@ -189,22 +189,22 @@ const portfolios = [
 const Portfolio = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [modalData, setModalData] = useState(null);
-  const [projects, setProjects] = useState(portfolios.slice(0, 6));
+  const [projects, setProjects] = useState(projectArray.slice(0, 6));
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleShowTechStacks = (id) => {
     setModalOpen(true);
-    setModalData(portfolios[id - 1]);
+    setModalData(projectArray[id - 1]);
   };
 
   const handleViewAllProjects = () => {
     setIsExpanded(true);
-    setProjects(portfolios);
+    setProjects(projectArray);
   };
 
   const handleShowLessProjects = () => {
     setIsExpanded(false);
-    setProjects(portfolios.slice(0, 6));
+    setProjects(projectArray.slice(0, 6));
   };
   return (
     <Element
@@ -221,17 +221,20 @@ const Portfolio = () => {
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            Projects
           </p>
           <p className="py-6">Check out some of my work right here</p>
         </div>
 
-        <div className="flex flex-row py-12 lg:grid  lg:grid-cols-3 lg:gap-8 overflow-auto">
-          {projects.map(
+        <div
+          id="MobileScreen"
+          className="flex  md:hidden py-12 lg:hidden  lg:grid-cols-3 lg:gap-8 overflow-auto"
+        >
+          {projectArray.map(
             ({ id, src, href, repo, title, extratStyle, style }) => (
               <div
                 key={id}
-                className="shadow-md duration-300
+                className="shadow-md  duration-300
                 mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
               >
                 <img
@@ -277,17 +280,75 @@ const Portfolio = () => {
           )}
         </div>
 
-        {!isExpanded ? (
-          <div className="cursor-pointer font-semibold text-base   text-sky-300 mb-4 w-full flex justify-center px-7">
-            <button onClick={() => handleViewAllProjects()}>
-              View all projects
-            </button>
-          </div>
-        ) : (
-          <div className="cursor-pointer font-semibold text-base   text-sky-300 mb-4 w-full flex justify-center px-7">
-            <button onClick={() => handleShowLessProjects()}>View Less</button>
-          </div>
-        )}
+        <div
+          id="DesktopScreen"
+          className=" hidden fle py-12 lg:grid  lg:grid-cols-3 lg:gap-8 overflow-auto"
+        >
+          {projects.map(
+            ({ id, src, href, repo, title, extratStyle, style }) => (
+              <div
+                key={id}
+                className="shadow-md  duration-300
+                mx-6 hover:scale-105  shadow-gray-600 rounded-lg"
+              >
+                <img
+                  src={src}
+                  alt=""
+                  style={style && { height: style }}
+                  className={`rounded-md  ${extratStyle && extratStyle} `}
+                />
+
+                <div className="absolute inset-0 flex items-center cursor-pointer justify-center pb-12 text-xl font-bold col opacity-0 bg-black bg-opacity-50 hover:opacity-100 transition-opacity duration-300">
+                  <p className="text-white text-center">{title}</p>
+                </div>
+
+                <div className="flex items-center  justify-center">
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" cursor-pointer w-1/2 font-medium px-6 py-3 m-4 z-10 "
+                  >
+                    Demo
+                  </a>
+                  <a
+                    href={repo}
+                    target="_blank"
+                    rel="noreferrer"
+                    className=" cursor-pointer w-1/2 font-medium px-6 py-3 m-4 z-10   "
+                  >
+                    Code
+                  </a>
+                </div>
+
+                <div className="flex items-center mb-1  justify-center">
+                  <span
+                    onClick={() => handleShowTechStacks(id)}
+                    className=" cursor-pointer font-semibold text-sm  -mt-2 text-sky-300 mb-4 z-10 "
+                  >
+                    View Tech Stacks
+                  </span>
+                </div>
+              </div>
+            )
+          )}
+        </div>
+
+        <div className="hidden md:flex">
+          {!isExpanded ? (
+            <div className="cursor-pointer font-semibold text-base   text-sky-300 mb-4 w-full flex justify-center px-7">
+              <button onClick={() => handleViewAllProjects()}>
+                View all projects
+              </button>
+            </div>
+          ) : (
+            <div className="cursor-pointer font-semibold text-base   text-sky-300 mb-4 w-full flex justify-center px-7">
+              <button onClick={() => handleShowLessProjects()}>
+                View Less
+              </button>
+            </div>
+          )}
+        </div>
       </div>
     </Element>
   );
