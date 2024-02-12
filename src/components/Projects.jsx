@@ -12,6 +12,7 @@ import Tenth from "../assets/portfolio/Tenth.png";
 import MERNTODO from "../assets/portfolio/Mern-Todo.png";
 import CALCULATOR from "../assets/portfolio/react-calculator.png";
 import NOTEKEEPER from "../assets/portfolio/fs-notekeeper.png";
+import OCHI from "../assets/portfolio/ochi-clone.png";
 import { Element } from "react-scroll";
 import TechStacks from "./TechStacks";
 
@@ -35,28 +36,9 @@ const projectArray = [
       "DayJS",
     ],
   },
+
   {
     id: 2,
-    src: MERNTODO,
-    href: "https://mern-fs-todo.vercel.app/login",
-    repo: "https://github.com/imprjde/fs-todo-frontend",
-    title: "MERN Todo App",
-    stacks: [
-      "Node JS",
-      "Express JS",
-      "React JS",
-      "Mongoose JS",
-      "Mongo DB",
-      "React Router Dom",
-      "React Toastify",
-      "TailwindCSS",
-      "Axios",
-      "Headlessui",
-      "Hero Icons",
-    ],
-  },
-  {
-    id: 3,
     src: NOTEKEEPER,
     href: "https://fs-notekeeper-frontend.vercel.app/",
     repo: "https://github.com/imprjde/fs-notekeeper-frontend",
@@ -77,29 +59,36 @@ const projectArray = [
     ],
   },
   {
-    id: 4,
-    src: Second,
-    href: "https://redux-crud-gules.vercel.app/",
-    repo: "https://github.com/imprjde/redux-crud",
-    title: "Redux Toolkit CRUD",
-    stacks: ["React JS", "Redux Toolkit", "React Router Dom", "Bootstrap"],
+    id: 3,
+    src: OCHI,
+    href: "https://ochi-clone.vercel.app/",
+    repo: "https://github.com/imprjde/ochi-clone",
+    title: "OCHI - Animated Website",
+    extratStyle: "w-full h-36",
+    stacks: ["React JS", "TailwindCSS", "Locmotive", "Framer Motion"],
   },
   {
-    id: 5,
-    src: Seventh,
-    href: "https://farmer-motion.netlify.app/",
-    repo: "https://github.com/imprjde/framer-motion-project",
-    title: "Challenge Manager (Framer Motion + Redux Tool Kit )",
+    id: 4,
+    src: MERNTODO,
+    href: "https://mern-fs-todo.vercel.app/login",
+    repo: "https://github.com/imprjde/fs-todo-frontend",
+    title: "MERN Todo App",
     stacks: [
+      "Node JS",
+      "Express JS",
       "React JS",
-      "React Redux",
+      "Mongoose JS",
+      "Mongo DB",
       "React Router Dom",
-      "React Icons",
+      "React Toastify",
       "TailwindCSS",
+      "Axios",
+      "Headlessui",
+      "Hero Icons",
     ],
   },
   {
-    id: 6,
+    id: 5,
     src: Third,
     href: "https://react-ecommerce-ap.vercel.app/",
     repo: "https://github.com/imprjde/react-ecommerce",
@@ -116,7 +105,30 @@ const projectArray = [
     ],
   },
   {
+    id: 6,
+    src: Seventh,
+    href: "https://farmer-motion.netlify.app/",
+    repo: "https://github.com/imprjde/framer-motion-project",
+    title: "Challenge Manager (Framer Motion + Redux Tool Kit )",
+    stacks: [
+      "React JS",
+      "React Redux",
+      "React Router Dom",
+      "React Icons",
+      "TailwindCSS",
+    ],
+  },
+  {
     id: 7,
+    src: Second,
+    href: "https://redux-crud-gules.vercel.app/",
+    repo: "https://github.com/imprjde/redux-crud",
+    title: "Redux Toolkit CRUD",
+    stacks: ["React JS", "Redux Toolkit", "React Router Dom", "Bootstrap"],
+  },
+
+  {
+    id: 8,
     src: Eight,
     href: "https://react-posts-comment.netlify.app/",
     repo: "https://github.com/imprjde/react-post-comments",
@@ -130,7 +142,7 @@ const projectArray = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     src: CALCULATOR,
     href: "https://react-calculator-prj.vercel.app/",
     repo: "https://github.com/imprjde/react-calculator",
@@ -139,7 +151,7 @@ const projectArray = [
     stacks: ["React JS", "TailwindCSS"],
   },
   {
-    id: 9,
+    id: 10,
     src: Ninth,
     href: "https://react-order-page.netlify.app/",
     repo: "https://github.com/imprjde/order-page",
@@ -147,7 +159,7 @@ const projectArray = [
     stacks: ["React JS", "TailwindCSS"],
   },
   {
-    id: 10,
+    id: 11,
     src: Fourth,
     href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
     repo: "https://github.com/imprjde/prajwal",
@@ -155,7 +167,7 @@ const projectArray = [
     stacks: ["React JS", "Axios", "TailwindCSS"],
   },
   {
-    id: 11,
+    id: 12,
     src: Tenth,
     href: "https://react-speech-to-text-converter.netlify.app/",
     repo: "https://github.com/imprjde/react-speech-to-text-converter",
@@ -169,7 +181,7 @@ const projectArray = [
     ],
   },
   {
-    id: 12,
+    id: 13,
     src: Fifth,
     href: "https://react-pagination-mauve-iota.vercel.app/",
     repo: "https://github.com/imprjde/react-pagination",
@@ -177,7 +189,7 @@ const projectArray = [
     stacks: ["React JS"],
   },
   {
-    id: 13,
+    id: 14,
     src: Sixth,
     href: "https://imprjde.github.io/tindog/#cta",
     repo: "https://github.com/imprjde/tindog",
@@ -208,7 +220,7 @@ const Portfolio = () => {
   };
   return (
     <Element
-      name="portfolio"
+      name="projects"
       className="bg-gradient-to-b from-black to-gray-800 w-full text-white md:h-fit md:pt-0 pt-[120px]"
     >
       {modalOpen && (

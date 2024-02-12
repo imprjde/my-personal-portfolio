@@ -33,10 +33,9 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div name="home">
       <div
         id="MobileScreen"
-        name="home"
         className="h-screen md:hidden w-full bg-gradient-to-b from-black via-black to-gray-800  "
       >
         <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-between h-full px-4 md:flex-row">
@@ -94,7 +93,7 @@ const Home = () => {
 
             <div>
               <Link
-                to="portfolio"
+                to="projects"
                 smooth
                 duration={500}
                 className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -148,7 +147,7 @@ const Home = () => {
           id="H-W-Transition"
           className="w-[70%] h-[70%] pt-20 md:pt-0 bg-gradient-to-b from-black via-black to-gray-800  flex m-auto justify-center items-center"
         >
-          <motion.div id="radius" name="home" className="h-screen w-full  ">
+          <motion.div id="radius" className="h-screen w-full  ">
             {!isAnimating && (
               <motion.div
                 initial={{ opacity: 0 }}
@@ -205,7 +204,7 @@ const Home = () => {
 
                   <div>
                     <Link
-                      to="portfolio"
+                      to="projects"
                       smooth
                       duration={500}
                       className="group text-white w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
@@ -235,7 +234,7 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </motion.div>
-    </>
+    </div>
   );
 };
 
