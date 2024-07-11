@@ -108,9 +108,6 @@ const Home = () => {
 
           <div className="md:w-[355px]  w-[300px]">
             <motion.img
-              // initial={{ rotateY: 0, y: 320 }}
-              // animate={{ rotateY: 360, y: 0 }}
-              // transition={{ duration: 1, delay: 2 }}
               src={HeroImage}
               alt="my profile"
               className="rounded-2xl mx-auto md:w-full"
@@ -161,7 +158,7 @@ const Home = () => {
                       <>
                         <motion.h2
                           key={i}
-                          initial={{ y: -200 }}
+                          initial={{ y: -300 }}
                           animate={{ y: 0 }}
                           transition={{
                             duration: 2,
@@ -198,8 +195,8 @@ const Home = () => {
                   <p className="text-gray-500 py-4 max-w-md">
                     I am an aspiring Junior Software Developer hailing from
                     India. My professional experience encompasses a proficiency
-                    in web technologies such as React JS, Next JS, and Redux
-                    Toolkit, among others.
+                    in web technologies such as React JS, Next JS, Node JS ,
+                    Express JS, MongoDB and Redux Toolkit, among others.
                   </p>
 
                   <div>
@@ -220,10 +217,24 @@ const Home = () => {
                   </div>
                 </div>
                 <div className="md:w-[355px]  w-[300px]">
-                  <motion.img
+                  {/* <motion.img
                     initial={{ rotateY: 0 }}
                     animate={{ rotateY: 360 }}
                     transition={{ duration: 1, delay: 3 }}
+                    src={HeroImage}
+                    alt="my profile"
+                    className="rounded-2xl mx-auto md:w-full"
+                  /> */}
+
+                  <motion.img
+                    initial={{ y: -800 }}
+                    animate={{ y: 0 }}
+                    transition={{
+                      duration: 1,
+                      delay: 1,
+                      type: "easeInOut",
+                      bounce: 0.5,
+                    }}
                     src={HeroImage}
                     alt="my profile"
                     className="rounded-2xl mx-auto md:w-full"

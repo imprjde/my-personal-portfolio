@@ -65,7 +65,7 @@ const SocialLinks = () => {
     <motion.div
       initial={{ x: -100 }}
       animate={{ x: 0 }}
-      transition={{ duration: 2, delay: 8 }}
+      transition={{ duration: 2, delay: 4 }}
       className={` lg:flex flex-col  top-[50%] md:top-[35%] left-0 fixed`}
     >
       <ul>
