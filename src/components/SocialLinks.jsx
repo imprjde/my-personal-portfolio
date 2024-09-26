@@ -47,7 +47,7 @@ const SocialLinks = () => {
         </>
       ),
       href: "/PrajwalResume.pdf",
-      download: true,
+      download: false,
     },
     {
       id: 5,

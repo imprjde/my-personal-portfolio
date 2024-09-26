@@ -13,6 +13,7 @@ import MERNTODO from "../assets/portfolio/Mern-Todo.png";
 import CALCULATOR from "../assets/portfolio/react-calculator.png";
 import NOTEKEEPER from "../assets/portfolio/fs-notekeeper.png";
 import OCHI from "../assets/portfolio/ochi-clone.png";
+import HireO from "../assets/portfolio/Hire-O.png";
 import { Element } from "react-scroll";
 import TechStacks from "./TechStacks";
 
@@ -21,6 +22,27 @@ import TechStacks from "./TechStacks";
 const projectArray = [
   {
     id: 1,
+    src: HireO,
+    href: "https://hireo-app.vercel.app/",
+    repo: "https://github.com/imprjde/HireO-Frontend",
+    title: "HireO App",
+    extratStyle: "w-full h-36 ",
+    stacks: [
+      "React JS",
+      "Redux Toolkit",
+      "Node JS",
+      "Express JS",
+      "MongoDB",
+      "Mongoose JS",
+      "Jsonwebtoken",
+      "Firebase",
+      "Cloudinary",
+      "Multer",
+      "Nodemailer",
+    ],
+  },
+  {
+    id: 2,
     src: First,
     href: "https://prajwal-react-movie-website-mocha.vercel.app/",
     repo: "https://github.com/imprjde/react-movie-website",
@@ -38,7 +60,7 @@ const projectArray = [
   },
 
   {
-    id: 2,
+    id: 3,
     src: NOTEKEEPER,
     href: "https://fs-notekeeper-frontend.vercel.app/",
     repo: "https://github.com/imprjde/fs-notekeeper-frontend",
@@ -59,7 +81,7 @@ const projectArray = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     src: OCHI,
     href: "https://ochi-clone.vercel.app/",
     repo: "https://github.com/imprjde/ochi-clone",
@@ -68,7 +90,7 @@ const projectArray = [
     stacks: ["React JS", "TailwindCSS", "Locmotive", "Framer Motion"],
   },
   {
-    id: 4,
+    id: 5,
     src: MERNTODO,
     href: "https://mern-fs-todo.vercel.app/login",
     repo: "https://github.com/imprjde/fs-todo-frontend",
@@ -88,7 +110,7 @@ const projectArray = [
     ],
   },
   {
-    id: 5,
+    id: 6,
     src: Third,
     href: "https://react-ecommerce-ap.vercel.app/",
     repo: "https://github.com/imprjde/react-ecommerce",
@@ -105,7 +127,7 @@ const projectArray = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     src: Seventh,
     href: "https://farmer-motion.netlify.app/",
     repo: "https://github.com/imprjde/framer-motion-project",
@@ -119,7 +141,7 @@ const projectArray = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     src: Second,
     href: "https://redux-crud-gules.vercel.app/",
     repo: "https://github.com/imprjde/redux-crud",
@@ -128,7 +150,7 @@ const projectArray = [
   },
 
   {
-    id: 8,
+    id: 9,
     src: Eight,
     href: "https://react-posts-comment.netlify.app/",
     repo: "https://github.com/imprjde/react-post-comments",
@@ -142,7 +164,7 @@ const projectArray = [
     ],
   },
   {
-    id: 9,
+    id: 10,
     src: CALCULATOR,
     href: "https://react-calculator-prj.vercel.app/",
     repo: "https://github.com/imprjde/react-calculator",
@@ -151,7 +173,7 @@ const projectArray = [
     stacks: ["React JS", "TailwindCSS"],
   },
   {
-    id: 10,
+    id: 11,
     src: Ninth,
     href: "https://react-order-page.netlify.app/",
     repo: "https://github.com/imprjde/order-page",
@@ -159,7 +181,7 @@ const projectArray = [
     stacks: ["React JS", "TailwindCSS"],
   },
   {
-    id: 11,
+    id: 12,
     src: Fourth,
     href: "https://prajwal-4whc835hu-imprjde7-gmailcom.vercel.app/",
     repo: "https://github.com/imprjde/prajwal",
@@ -167,7 +189,7 @@ const projectArray = [
     stacks: ["React JS", "Axios", "TailwindCSS"],
   },
   {
-    id: 12,
+    id: 13,
     src: Tenth,
     href: "https://react-speech-to-text-converter.netlify.app/",
     repo: "https://github.com/imprjde/react-speech-to-text-converter",
@@ -181,7 +203,7 @@ const projectArray = [
     ],
   },
   {
-    id: 13,
+    id: 14,
     src: Fifth,
     href: "https://react-pagination-mauve-iota.vercel.app/",
     repo: "https://github.com/imprjde/react-pagination",
@@ -189,7 +211,7 @@ const projectArray = [
     stacks: ["React JS"],
   },
   {
-    id: 14,
+    id: 15,
     src: Sixth,
     href: "https://imprjde.github.io/tindog/#cta",
     repo: "https://github.com/imprjde/tindog",
