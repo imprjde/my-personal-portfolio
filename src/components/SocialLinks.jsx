@@ -18,7 +18,7 @@ const SocialLinks = () => {
           LinkedIn <FaLinkedin size={30} />
         </>
       ),
-      href: "https://www.linkedin.com/in/prajwal-s-devadiga",
+      href: "https://www.linkedin.com/in/prajwalsdevadiga/",
       style: "rounded-t-none md:rounded-tr-md  ",
     },
     {
@@ -46,7 +46,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/PrajwalResume.pdf",
+      href: "/Prajwal_Software_Engineer_2026.pdf",
       download: false,
     },
     {
