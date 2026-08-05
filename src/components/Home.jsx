@@ -85,10 +85,9 @@ const Home = () => {
               transition={{ duration: 3 }}
               className="text-gray-400 py-4 max-w-md"
             >
-              I am an aspiring Junior Software Developer hailing from India. My
-              professional experience encompasses a proficiency in web
-              technologies such as React JS, Next JS, and Redux Toolkit, among
-              others.
+              I am a Full Stack Software Engineer from India with 3.5+ Years of Industry Experience.
+              My professional experience encompasses a proficiency in web technologies such as React JS,
+              Next JS, Node JS , Express JS, MongoDB, MySQL, Redux Toolkit, among others.
             </motion.p>
 
             <div>
@@ -193,10 +192,9 @@ const Home = () => {
                     Developer
                   </h2>
                   <p className="text-gray-500 py-4 max-w-md">
-                    I am an aspiring Junior Software Developer hailing from
-                    India. My professional experience encompasses a proficiency
-                    in web technologies such as React JS, Next JS, Node JS ,
-                    Express JS, MongoDB and Redux Toolkit, among others.
+              I am a Full Stack Software Engineer from India with 3.5+ Years of Industry Experience.
+              My professional experience encompasses a proficiency in web technologies such as React JS,
+              Next JS, Node JS , Express JS, MongoDB, MySQL, Redux Toolkit, among others.
                   </p>
 
                   <div>
